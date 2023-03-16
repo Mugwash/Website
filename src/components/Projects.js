@@ -1,10 +1,11 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav} from "react-bootstrap";
 import * as React from 'react';
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard } from "../components/ProjectCards";
 import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
+import projImg2 from "../assets/img/car3.gif";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import navIcon2 from '../assets/img/github-mark-white.svg';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -15,16 +16,22 @@ export const Projects = () => {
             title:"Ai 5aside",
             description:"AI trained using ML models learn to play 5aside football",
             imgUrl:projImg1,
+            buttonUrl:"https://github.com/Mugwash/",
+            buttonImg:navIcon2,
         },
         {
             title:"Car Kart Game",
-            description:"car racing game with self written Physics",
+            description:"car racing game with self written Physics, Still in progress.",
             imgUrl:projImg2,
+            buttonUrl:"https://github.com/Mugwash/",
+            buttonImg:navIcon2,
         },
         {
             title:"Website",
             description:"The Website you are viewing right now! coded from scratch using HTML5,CSS,JS and React",
             imgUrl:projImg3,
+            buttonUrl:"https://github.com/Mugwash/",
+            buttonImg:navIcon2,
         }
 
 
@@ -37,7 +44,7 @@ export const Projects = () => {
                         <h2>Projects</h2>
                         <p>list of all my projects</p>
                         <Tab.Container id ="projects-tabs" defaultActiveKey = "first">
-                        <Nav variant="pills" defaultActiveKey="/home">
+                        <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
                                 <Nav.Link eventKey="first">Tab1</Nav.Link>
                             </Nav.Item>
@@ -54,7 +61,9 @@ export const Projects = () => {
                                         {
                                             projects.map((project, index) => {
                                                 return(
-                                                    <p>{project.title}</p>
+                                                    <ProjectCard key = {index}
+                                                                 {...project}
+                                                    />
                                                 )
                                             })
                                         }
@@ -67,6 +76,7 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
+            <img className="background-image-right" src={colorSharp2}/>
         </section>
     )
 }
