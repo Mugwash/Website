@@ -1,11 +1,12 @@
 import { Container, Row, Col, Tab, Nav} from "react-bootstrap";
 import * as React from 'react';
 import { ProjectCard } from "../components/ProjectCards";
-import projImg1 from "../assets/img/project-img1.png";
+import projImg1 from "../assets/img/5aside.gif";
 import projImg2 from "../assets/img/car3.gif";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import navIcon2 from '../assets/img/github-mark-white.svg';
+import youtubeIcon from '../assets/img/youtubew.svg';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -16,8 +17,8 @@ export const Projects = () => {
             title:"Ai 5aside",
             description:"AI trained using ML models learn to play 5aside football",
             imgUrl:projImg1,
-            buttonUrl:"https://github.com/Mugwash/",
-            buttonImg:navIcon2,
+            buttonUrl:"https://youtu.be/RnZHZhu8Bz4",
+            buttonImg:youtubeIcon,
         },
         {
             title:"Car Kart Game",
