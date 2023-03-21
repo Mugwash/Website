@@ -2,10 +2,11 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css"
 import {Controller} from "react-bootstrap-icons";
 import {Col, Container, Row} from "react-bootstrap";
-import meter1 from "../assets/img/meter1.svg"
-import meter2 from "../assets/img/meter2.svg"
-import meter3 from "../assets/img/meter3.svg"
-import colorSharp from "../assets/img/color-sharp.png"
+import Python from "../assets/img/Python.svg.png"
+import JS from "../assets/img/JavaScript.svg.png"
+import Csharp from "../assets/img/c#.png"
+import Cplusplus from "../assets/img/c++.svg"
+import colorSharp from "../assets/img/colorsharpbleft.png"
 import * as React from 'react';
 export const Skills = () => {
     const responsive = {
@@ -36,27 +37,31 @@ export const Skills = () => {
                         <div id="skills-id"/>
                         <div className="skill-bx">
                             <h2>
-                                Skills
+                                Programming Languages
                             </h2>
                             <p>
-                                These are the roles I'm capable of doing
+                                These are the languages with which I am most familiar, along with my self-assessed proficiency level in each
                             </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt={"Image"}/>
-                                    <h5>Game Developer</h5>
+                                    <img src={Python} alt={"Image"}/>
+                                    <span className="logo-text">Strongest</span>
+                                    <h5>Python</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt={"Image"}/>
-                                    <h5>Front End Dev</h5>
+                                    <img src={Csharp} alt={"Image"}/>
+                                    <span className="logo-text">Strongest</span>
+                                    <h5>C#</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt={"Image"}/>
-                                    <h5>Software Dev</h5>
+                                    <img src={Cplusplus} alt={"Image"}/>
+                                    <span className="logo-text">Intermediate</span>
+                                    <h5>C++</h5>
                                 </div>
                                 <div className= "item">
-                                    <img src={meter1} alt={"Image"}/>
-                                    <h5>Data Solutions Consultant</h5>
+                                    <img src={JS} alt={"Image"}/>
+                                    <span className="logo-text">Intermediate</span>
+                                    <h5>Javascript</h5>
                                 </div>
                             </Carousel>
                         </div>

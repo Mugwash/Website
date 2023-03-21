@@ -67,6 +67,17 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
+.logo-text {
+  position: absolute;
+  bottom: 30%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+
 @media (min-width:1700px) {
   main .container {
     max-width: 100%;
@@ -342,7 +353,7 @@ width: 80%;
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: #121212;
 }
 .project h2 {
   font-size: 45px;
@@ -387,7 +398,7 @@ width: 80%;
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #297de3 -5.91%, #000000 111.58%);
   top: 0;
   left: 0;
   z-index: -1;
@@ -419,7 +430,7 @@ width: 80%;
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #297de3 -5.91%, #000000 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -476,4 +487,19 @@ width: 80%;
 #projects-id {
   height: 0vh;
   overflow-y: scroll;
+}
+
+/*********Github*********/
+.GHcontributions{
+  position: absolute;
+  width: 50%;
+}
+
+.GHbox{
+  background:#151515;
+  color: white;
+  border-radius:64px ;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
 }
