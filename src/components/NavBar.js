@@ -8,6 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 import {
     BrowserRouter as Router
 } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export const NavBar = () =>{
     const [activeLink,setActiveLink] = useState('home');
@@ -42,9 +43,9 @@ export const NavBar = () =>{
                     </Navbar.Toggle>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                            <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}><Link to="home-id" smooth={true} duration={500} spy={true} exact="true" offset={-70}>Home</Link></Nav.Link>
+                            <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}><Link to="skills-id" smooth={true} duration={500} spy={true} exact="true" offset={-300}>Skills</Link></Nav.Link>
+                            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><Link to="projects-id" smooth={true} duration={500} spy={true} exact="true" offset={-300}>Projects</Link></Nav.Link>
                         </Nav>
                         <span className="navbar-text">
               <div className="social-icon">

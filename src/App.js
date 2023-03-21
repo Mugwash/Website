@@ -9,6 +9,7 @@ import {Projects} from "./components/Projects";
 function App() {
   return (
     <div className="App" >
+        <div id="home-id"/>
         <NavBar/>
         <Banner/>
         <Skills/>

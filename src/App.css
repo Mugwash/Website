@@ -468,3 +468,12 @@ width: 80%;
   justify-content: center;
   margin-top: 10px;
 }
+/********scroll**********/
+#skills-id {
+  height: 0vh;
+  overflow-y: scroll;
+}
+#projects-id {
+  height: 0vh;
+  overflow-y: scroll;
+}
