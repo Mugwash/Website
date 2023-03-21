@@ -4,8 +4,6 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/mugstudios.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github-mark-white.svg';
-import { HashLink } from 'react-router-hash-link';
-import CV from "../assets/files/CV_JackGrime-6.pdf"
 import {
     BrowserRouter as Router
 } from "react-router-dom";
@@ -53,7 +51,7 @@ export const NavBar = () =>{
                 <a href="https://www.linkedin.com/in/jack-grime-102189147/"><img src={navIcon1} alt="" /></a>
                 <a href="https://github.com/Mugwash"><img src={navIcon2} alt="" /></a>
               </div>
-                            <a href="https://firebasestorage.googleapis.com/v0/b/mug-web-b1945.appspot.com/o/CV_JackGrime-6.pdf?alt=media&token=326efea5-29d9-4d2d-b15c-69fd5989b986" target="_blank">
+                            <a href="https://firebasestorage.googleapis.com/v0/b/mug-web-b1945.appspot.com/o/CV_JackGrime-6.pdf?alt=media&token=326efea5-29d9-4d2d-b15c-69fd5989b986" target="_blank"  rel="noopener noreferrer">
                             <button type="button" className="vvd">
                                 <span>Download CV</span>
                             </button>

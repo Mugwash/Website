@@ -1,14 +1,13 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css"
 import {Col, Container, Row} from "react-bootstrap";
-import Python from "../assets/img/Python.svg.png"
-import JS from "../assets/img/JavaScript.svg.png"
-import Csharp from "../assets/img/c#.png"
-import Cplusplus from "../assets/img/c++.svg"
-import SQL from "../assets/img/SQL (2).svg";
+import databricks from "../assets/img/databricks.svg";
+import GitHub from "../assets/img/github-mark-white.svg";
+import git from "../assets/img/git.svg";
+import react from "../assets/img/react.svg";
 import colorSharp from "../assets/img/colorsharpbleft.png"
 import * as React from 'react';
-export const Skills = () => {
+export const Stacks = () => {
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -30,44 +29,40 @@ export const Skills = () => {
     };
 
     return(
-        <section className="skill" id ="skills" >
+        <section className="stack" id ="stacks" >
             <Container>
                 <Row>
                     <Col>
                         <div id="skills-id"/>
                         <div className="skill-bx">
                             <h2>
-                                Programming Languages
+                                Tech Stack
                             </h2>
                             <p>
-                                These are the languages with which I am most familiar, along with my self-assessed proficiency level in each
+                                These are the technologies that I am familiar with a self assessed proficiency
                             </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={Python} alt={"Image"}/>
-                                    <span className="logo-text">Advanced</span>
-                                    <h5>Python</h5>
+                                    <img src={GitHub} alt={"Image"}/>
+                                    <span className="git-text">Advanced</span>
+                                    <h5>GitHub</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={Csharp} alt={"Image"}/>
-                                    <span className="logo-text">Advanced</span>
-                                    <h5>C#</h5>
+                                    <img src={git} alt={"Image"}/>
+                                    <span className="git-text">Advanced</span>
+                                    <h5>Git</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={Cplusplus} alt={"Image"}/>
-                                    <span className="logo-text">Intermediate</span>
-                                    <h5>C++</h5>
+                                    <img src={databricks} alt={"Image"} style={{ width: '150px', height: '150px' }}/>
+                                    <span className="tech-text">Low Intermediate</span>
+                                    <h5>Azure Databricks</h5>
                                 </div>
-                                <div className= "item">
-                                    <img src={JS} alt={"Image"}/>
-                                    <span className="logo-text">Intermediate</span>
-                                    <h5>Javascript</h5>
+                                <div className="item">
+                                    <img src={react} alt={"Image"} style={{ width: '150px', height: '150px' }}/>
+                                    <span className="tech-text">Low Intermediate</span>
+                                    <h5>React</h5>
                                 </div>
-                                <div className= "item">
-                                    <img src={SQL} alt={"Image"}/>
-                                    <span className="logo-text">Low Intermediate</span>
-                                    <h5>SQL</h5>
-                                </div>
+
                             </Carousel>
                         </div>
                     </Col>

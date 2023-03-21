@@ -1,14 +1,16 @@
 import { Container, Row, Col, Tab, Nav} from "react-bootstrap";
 import * as React from 'react';
-import { ProjectCard } from "../components/ProjectCards";
+import { ProjectCard } from "./ProjectCards";
 import projImg1 from "../assets/img/5aside.gif";
 import projImg2 from "../assets/img/car3.gif";
 import projImg3 from "../assets/img/web.gif";
+import certImg1 from "../assets/img/azFundamentals.png"
+import certImg2 from "../assets/img/DP-900.png"
 import colorSharp2 from "../assets/img/colorsharpb.png";
 import navIcon2 from '../assets/img/github-mark-white.svg';
 import youtubeIcon from '../assets/img/youtubew.svg';
+import credly from '../assets/img/Credly.png';
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
@@ -24,17 +26,32 @@ export const Projects = () => {
             title:"Car Kart Game",
             description:"car racing game with self written Physics, Still in progress.",
             imgUrl:projImg2,
-            buttonUrl:"https://github.com/Mugwash/",
+            buttonUrl:"https://github.com/Mugwash/CarKART",
             buttonImg:navIcon2,
         },
         {
             title:"Website",
             description:"The Website you are viewing right now! coded from scratch using HTML5,CSS,JS and React",
             imgUrl:projImg3,
-            buttonUrl:"https://github.com/Mugwash/",
+            buttonUrl:"https://github.com/Mugwash/Website",
             buttonImg:navIcon2,
         }
-
+    ]
+    const certs =[
+        {
+            title:"Azure Fundamentals",
+            description:"AZ-900",
+            imgUrl:certImg1,
+            buttonUrl:"https://www.credly.com/badges/8e97d468-d929-42b2-afde-b58ef6f7995a/linked_in",
+            buttonImg:credly,
+        },
+        {
+            title:"Azure Data Fundamentals",
+            description:"DP-900",
+            imgUrl:certImg2,
+            buttonUrl:"https://www.credly.com/badges/49d18a31-4ab1-4a18-9b64-a9a8fa90e8b8/linked_in",
+            buttonImg:credly,
+        }
 
     ]
     return(
@@ -43,18 +60,15 @@ export const Projects = () => {
                 <div id="projects-id"/>
                 <Row>
                     <Col>
-                        <h2>Projects</h2>
+                        <h2>Projects & Certifications</h2>
                         <p>list of all my projects</p>
                         <Tab.Container id ="projects-tabs" defaultActiveKey = "first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
-                                <Nav.Link eventKey="first">Tab1</Nav.Link>
+                                <Nav.Link eventKey="first">Projects</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="second">Tab2</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="third">Tab3</Nav.Link>
+                                <Nav.Link eventKey="second">Certifications</Nav.Link>
                             </Nav.Item>
                         </Nav>
                             <Tab.Content>
@@ -71,14 +85,25 @@ export const Projects = () => {
                                         }
                                     </Row>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey = "second">second</Tab.Pane>
+                                <Tab.Pane eventKey = "second">
+                                    <Row>
+                                        {
+                                            certs.map((project, index) => {
+                                                return(
+                                                    <ProjectCard key = {index}
+                                                                {...project}
+                                                    />
+                                            )
+                                        })
+                                    }
+                                </Row></Tab.Pane>
                                 <Tab.Pane eventKey = "third">third</Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2}/>
+            <img className="background-image-right" src={colorSharp2} />
         </section>
     )
 }

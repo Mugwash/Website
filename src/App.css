@@ -78,6 +78,28 @@ input:focus, textarea:focus, select:focus {
   border-radius: 30px;
 }
 
+.tech-text {
+  position: absolute;
+  bottom: 15%;
+  right: -20%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+
+.git-text {
+  position: absolute;
+  bottom: 15%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+
 @media (min-width:1700px) {
   main .container {
     max-width: 100%;
@@ -307,6 +329,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+.my-image {
+  border-radius: 50%;
+}
 
 /*Skills*/
 .skill{
@@ -412,15 +437,9 @@ width: 80%;
 }
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 55px 0px 0px 55px;
 }
 .nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0 55px 55px 0;
 }
 .proj-imgbx {
   position: relative;
