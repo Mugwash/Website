@@ -61,7 +61,6 @@ export const Projects = () => {
                 <Row>
                     <Col>
                         <h2>Projects & Certifications</h2>
-                        <p>list of all my projects</p>
                         <Tab.Container id ="projects-tabs" defaultActiveKey = "first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
@@ -97,7 +96,6 @@ export const Projects = () => {
                                         })
                                     }
                                 </Row></Tab.Pane>
-                                <Tab.Pane eventKey = "third">third</Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
                     </Col>

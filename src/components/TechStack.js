@@ -44,22 +44,22 @@ export const Stacks = () => {
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={GitHub} alt={"Image"}/>
-                                    <span className="git-text">Advanced</span>
+                                    <span className="tech-text">Advanced</span>
                                     <h5>GitHub</h5>
                                 </div>
                                 <div className="item">
                                     <img src={git} alt={"Image"}/>
-                                    <span className="git-text">Advanced</span>
+                                    <span className="tech-text">Advanced</span>
                                     <h5>Git</h5>
                                 </div>
                                 <div className="item">
                                     <img src={databricks} alt={"Image"} style={{ width: '150px', height: '150px' }}/>
-                                    <span className="tech-text">Low Intermediate</span>
+                                    <span className="tech-text">Associate</span>
                                     <h5>Azure Databricks</h5>
                                 </div>
                                 <div className="item">
                                     <img src={react} alt={"Image"} style={{ width: '150px', height: '150px' }}/>
-                                    <span className="tech-text">Low Intermediate</span>
+                                    <span className="tech-text">Associate</span>
                                     <h5>React</h5>
                                 </div>
 

@@ -17,7 +17,10 @@ function App() {
         <Skills/>
         <Stacks/>
         <Projects/>
-        <GHcontributions/>
+        <div id="feature"><GHcontributions/>
+        </div>
+
+
     </div>
   );
 }

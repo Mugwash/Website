@@ -80,8 +80,8 @@ input:focus, textarea:focus, select:focus {
 
 .tech-text {
   position: absolute;
-  bottom: 15%;
-  right: -20%;
+  bottom: 50%;
+  right: -10%;
   transform: translate(-50%, -50%);
   background-color: white;
   color: black;
@@ -349,6 +349,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill h5{
   font-size:45px ;
   font-weight: 700;
+  text-align: center;
+}
+
+.stack h5{
+  font-size:45px ;
+  font-weight: 700;
+  text-align: center;
 }
 .skill p{
   color: #B8B8B8;
@@ -521,4 +528,16 @@ width: 80%;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+}
+/*********HideIfMobile*********/
+/* Default styling */
+#feature {
+  display: block;
+}
+
+/* Hide on mobile */
+@media (max-width: 767px) {
+  #feature {
+    display: none;
+  }
 }
