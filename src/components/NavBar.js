@@ -48,10 +48,10 @@ export const NavBar = () =>{
                         </Nav>
                         <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/jack-grime-102189147/"><img src={navIcon1} alt="" /></a>
+                <a href="https://www.linkedin.com/in/jackgrime/"><img src={navIcon1} alt="" /></a>
                 <a href="https://github.com/Mugwash"><img src={navIcon2} alt="" /></a>
               </div>
-                            <a href="https://firebasestorage.googleapis.com/v0/b/mugwebsite-7500d.appspot.com/o/CV_JackGrime-15-1.pdf?alt=media&token=aef47b0a-8321-43f1-810f-caf48ab444ea" target="_blank"  rel="noopener noreferrer">
+                            <a href="https://firebasestorage.googleapis.com/v0/b/mugwebsite-7500d.appspot.com/o/CV_JackGrime-16.pdf?alt=media&token=3def1f2b-a708-4d9e-9ab4-43cab08c29c8" target="_blank"  rel="noopener noreferrer">
                             <button type="button" className="vvd">
                                 <span>Download CV</span>
                             </button>
