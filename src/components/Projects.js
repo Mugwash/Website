@@ -23,10 +23,10 @@ export const Projects = () => {
             buttonImg:youtubeIcon,
         },
         {
-            title:"Car Kart Game",
-            description:"car racing game with self written Physics, Still in progress.",
+            title:"Unity Vehicle controller to DOTS",
+            description:"converted regular game object vehicle controller to a data oriented technology stack",
             imgUrl:projImg2,
-            buttonUrl:"https://github.com/Mugwash/CarKART",
+            buttonUrl:"https://github.com/Mugwash/Vehicle-Controller-DOTS-ECS",
             buttonImg:navIcon2,
         },
         {
