@@ -59,7 +59,7 @@ export const Banner = () => {
                         </div>
                         <h2>
                             <span className={"wrap"}>{text}</span>
-                            <p>I am a specialized IT consultant, with a focus on data engineering and software development. My proficiency in industry standard tools such as Azure and Databricks, as well as my use of source control with Git, have been invaluable in my roles as a Platform Developer, Data Engineer, and Machine Learning Proof of Concept lead. In addition to my expertise in Python, I am also strong in C# due to my game development experience at university and outside of work. Overall, my adaptability, quick learning abilities, and dedication to my work make me a valuable addition to any team.</p>
+                            <p>I am a specialised IT consultant, with a focus on data engineering and software development. My proficiency in industry standard tools such as Azure and Databricks, as well as my use of source control with Git, have been invaluable in my roles as a Observability Engineer, Data Engineer, and Machine Learning Proof of Concept developer. In addition to my expertise in Python, I am also strong in C# due to my game development experience at university and outside of work. Overall, my adaptability, quick learning abilities, and dedication to my work make me a valuable addition to any team.</p>
                             <button onClick={() => console.log('connect')}>Let's Connect<ArrowRightCircle size = {25}/></button>
                         </h2>
                     </Col>
