@@ -4,6 +4,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import Python from "../assets/img/Python.svg.png"
 import JS from "../assets/img/JavaScript.svg.png"
 import Csharp from "../assets/img/c#.png"
+import powershell from "../assets/img/powershell.png"
 import Cplusplus from "../assets/img/c++.svg"
 import SQL from "../assets/img/SQL (2).svg";
 import colorSharp from "../assets/img/colorsharpbleft.png"
@@ -54,13 +55,13 @@ export const Skills = () => {
                                     <h5>C#</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={Cplusplus} alt={"Image"}/>
-                                    <span className="logo-text">Intermediate</span>
-                                    <h5>C++</h5>
+                                    <img src={powershell} alt={"Image"}/>
+                                    <span className="logo-text">Associate</span>
+                                    <h5>Powershell</h5>
                                 </div>
                                 <div className= "item">
                                     <img src={JS} alt={"Image"}/>
-                                    <span className="logo-text">Intermediate</span>
+                                    <span className="logo-text">Associate</span>
                                     <h5>Javascript</h5>
                                 </div>
                                 <div className= "item">

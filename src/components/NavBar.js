@@ -51,7 +51,7 @@ export const NavBar = () =>{
                 <a href="https://www.linkedin.com/in/jackgrime/"><img src={navIcon1} alt="" /></a>
                 <a href="https://github.com/Mugwash"><img src={navIcon2} alt="" /></a>
               </div>
-                            <a href="https://firebasestorage.googleapis.com/v0/b/mugwebsite-7500d.appspot.com/o/CV_JackGrime-17.pdf?alt=media&token=a71ff704-9d17-4024-aa5f-efd15a689920" target="_blank"  rel="noopener noreferrer">
+                            <a href="https://firebasestorage.googleapis.com/v0/b/mugwebsite-7500d.appspot.com/o/CV_JackGrime26_01_2024.pdf?alt=media&token=ce7b0f91-657d-49d9-a3b7-cfccf7bc978e" target="_blank"  rel="noopener noreferrer">
                             <button type="button" className="vvd">
                                 <span>Download CV</span>
                             </button>

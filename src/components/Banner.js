@@ -11,7 +11,7 @@ export const Banner = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(100);
     const [, setIndex] = useState(1);
-    const toRotate = [ "Front end Dev", "Software Dev","Game dev" ];
+    const toRotate = [ "Sr Data Analyst", "Cloud AI Engineer","Game dev" ];
     const period = 1000;
 
     useEffect(() => {
@@ -59,8 +59,11 @@ export const Banner = () => {
                         </div>
                         <h2>
                             <span className={"wrap"}>{text}</span>
-                            <p>I am a specialised IT consultant, with a focus on data engineering and software development. My proficiency in industry standard tools such as Azure and Databricks, as well as my use of source control with Git, have been invaluable in my roles as a Observability Engineer, Data Engineer, and Machine Learning Proof of Concept developer. In addition to my expertise in Python, I am also strong in C# due to my game development experience at university and outside of work. Overall, my adaptability, quick learning abilities, and dedication to my work make me a valuable addition to any team.</p>
-                            <button onClick={() => console.log('connect')}>Let's Connect<ArrowRightCircle size = {25}/></button>
+                            <p>I am a Sr Analyst specialising in Data and Software with 3+ years of experience in the IT industry. I am proficient in a variety of programming languages in which Python & C# are my strongest. I am also a certified Azure AI Associate (AI-102). Other certifications I've obtained include C# Foundations by Microsoft as well as Azure Fundamentals (AZ900) and Azure Data Fundamentals (DP900). I have also used a variety of tech stacks due to the variety of projects I've been involved in. The Technology I'm most familiar with is GIT, Bash, Azure Cognitive services, PowerShell and Nagios.</p>
+                            <a href="https://www.linkedin.com/in/jackgrime/">
+                                <button onClick={() => console.log('connect')}>Let's Connect<ArrowRightCircle size={25} /></button>
+                            </a>
+                            
                         </h2>
                     </Col>
                     <Col xs={12} md={6} xl={5}>

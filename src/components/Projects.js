@@ -6,6 +6,7 @@ import projImg2 from "../assets/img/car3.gif";
 import projImg3 from "../assets/img/web.gif";
 import certImg1 from "../assets/img/azFundamentals.png"
 import certImg2 from "../assets/img/DP-900.png"
+import AI_102 from "../assets/img/AI-102.png";
 import colorSharp2 from "../assets/img/colorsharpb.png";
 import navIcon2 from '../assets/img/github-mark-white.svg';
 import youtubeIcon from '../assets/img/youtubew.svg';
@@ -37,7 +38,14 @@ export const Projects = () => {
             buttonImg:navIcon2,
         }
     ]
-    const certs =[
+    const certs = [
+        {
+            title: "Azure Fundamentals",
+            description: "AI-102",
+            imgUrl: AI_102,
+            buttonUrl: "https://learn.microsoft.com/api/credentials/share/en-gb/GrimeJack-8580/4B45E5B1DF6000BD?sharingId=31FDFF319B8C9642",
+            buttonImg: credly,
+        },
         {
             title:"Azure Fundamentals",
             description:"AZ-900",

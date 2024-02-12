@@ -2,7 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css"
 import {Col, Container, Row} from "react-bootstrap";
 import databricks from "../assets/img/databricks.svg";
-import GitHub from "../assets/img/github-mark-white.svg";
+import cognitive_services from "../assets/img/cognitive_services.png";
 import git from "../assets/img/git.svg";
 import react from "../assets/img/react.svg";
 import colorSharp from "../assets/img/colorsharpbleft.png"
@@ -43,19 +43,14 @@ export const Stacks = () => {
                             </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={GitHub} alt={"Image"}/>
-                                    <span className="tech-text">Advanced</span>
-                                    <h5>GitHub</h5>
+                                    <img src={cognitive_services} alt={"Image"} style={{ width: '150px', height: '150px' }}/>
+                                    <span className="tech-text">Associate</span>
+                                    <h5>Cognitive Services</h5>
                                 </div>
                                 <div className="item">
                                     <img src={git} alt={"Image"}/>
                                     <span className="tech-text">Advanced</span>
-                                    <h5>Git</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={databricks} alt={"Image"} style={{ width: '150px', height: '150px' }}/>
-                                    <span className="tech-text">Associate</span>
-                                    <h5>Azure Databricks</h5>
+                                    <h5>Git & Bash</h5>
                                 </div>
                                 <div className="item">
                                     <img src={react} alt={"Image"} style={{ width: '150px', height: '150px' }}/>
